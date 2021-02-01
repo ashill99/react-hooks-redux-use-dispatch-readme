@@ -3,6 +3,11 @@ const initialState = {
 };
 
 function counterReducer(state = initialState, action) {
+
+  export function incrementCounter() {
+    return { type: "count/incremenet" }
+  }
+
   switch (action.type) {
     case "count/increment":
       console.log("Current state.items length %s", state.items.length);

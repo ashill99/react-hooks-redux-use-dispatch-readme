@@ -1,8 +1,11 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { incrementCounter } from './counterSlice'
 
 function Counter() {
-  // read from the Redux store
+
+
+    // read from the Redux store
   const items = useSelector((state) => state.items);
 
   // gives us the dispatch function to send actions to the Redux store
